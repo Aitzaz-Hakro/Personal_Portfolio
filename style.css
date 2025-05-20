@@ -1,3 +1,17 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 body{
     scroll-behavior: smooth;
 
@@ -20,7 +34,7 @@ body{
 }
 
 .profilephoto:hover{
-    border: #0d6efd 4px solid;
+    border: hsl(216, 98%, 55%) 4px solid;
     filter: grayscale(0%);
     transform: scale(1.0);
     transition: all 0.5s;
@@ -276,5 +290,492 @@ body{
   .animate5 {
     top: 350px;
     left: 40px;
+  }
+}
+
+/* Mobile Responsive Media Query */
+
+/* Mobile Responsive Styles - Add this to your style.css file */
+
+/* Base mobile styles */
+/* @media screen and (max-width: 768px) {
+  /* Navigation */
+  .navbar-brand {
+    font-size: 1rem;
+    padding: 8px 12px;
+    margin: 4px 2px;
+  }
+  
+  /* Introduction section */
+  #Introduction h1 {
+    font-size: 2.5rem !important;
+    margin-left: 15px !important;
+    margin-top: 20px !important;
+  }
+  
+  .desc {
+    font-size: 1rem !important;
+    margin-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  
+  /* Center profile photo and animations */
+  .Animation {
+    margin: 0 auto;
+    height: 350px;
+  }
+  
+  .profilephoto {
+    width: 70% !important;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Skills section */
+  #Skills h1 {
+    font-size: 2.5rem !important;
+    margin-left: 15px !important;
+  }
+  
+  .languages h1, h1 {
+    font-size: 1.8rem !important;
+    margin-left: 10px;
+  }
+  
+  .card {
+    width: 100% !important;
+    margin: 10px 5px !important;
+  }
+  
+  /* Projects section */
+  #Projects h1 {
+    font-size: 2.5rem !important;
+    margin-left: 15px !important;
+  }
+  
+  .card.mb-3 {
+    max-width: 100% !important;
+  }
+  
+  /* Contact section */
+  #Contact h1 {
+    font-size: 2.5rem !important;
+    margin-left: 15px !important;
+  }
+  
+  /* Fix animation positions for mobile */
+  .animate1 {
+    top: 20px;
+    left: 40px;
+  }
+
+  .animate2 {
+    top: 70px;
+    left: 40px;
+  }
+
+  .animate3 {
+    top: 120px;
+    left: 40px;
+  }
+  
+  .animate4 {
+    top: 170px;
+    left: 40px;
+  }
+
+  .animate5 {
+    top: 220px;
+    left: 40px;
+  }
+  
+  /* Social icons */
+  .icons {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 10px;
+  }
+  
+  .icons .col-md-1 {
+    width: 25%;
+    text-align: center;
+  }
+  
+  .icons img {
+    max-width: 70%;
+  }
+} */
+
+/* Small mobile devices */
+@media screen and (max-width: 480px) {
+  /* Navigation */
+  .navbar-brand {
+    font-size: 0.8rem;
+    padding: 6px 8px;
+  }
+  
+  /* Headings */
+  #Introduction h1, #Skills h1, #Projects h1, #Contact h1 {
+    font-size: 2rem !important;
+  }
+  
+  /* Profile section */
+  .Animation {
+    height: 300px;
+  }
+  
+  /* Animation positions for very small screens */
+  .animate1 {
+    top: 20px;
+    left: 30px;
+  }
+
+  .animate2 {
+    top: 60px;
+    left: 30px;
+  }
+
+  .animate3 {
+    top: 100px;
+    left: 30px;
+  }
+  
+  .animate4 {
+    top: 140px;
+    left: 30px;
+  }
+
+  .animate5 {
+    top: 180px;
+    left: 30px;
+  }
+  
+  /* Make cards full width and reduce margins */
+  .card {
+    margin: 8px 0 !important;
+  }
+}
+
+
+/* Enhanced Mobile Template for Portfolio Website */
+
+/* Global Mobile Adjustments */
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+    font-size: 16px;
+  }
+  
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  /* Modern Mobile Navigation */
+  .navbar {
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.95) !important;
+  }
+  
+  .container-md {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+    padding: 0 5px;
+  }
+  
+  .container-md::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+  
+  .navbar-brand {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+    margin: 4px 4px;
+    white-space: nowrap;
+    flex-shrink: 0;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Introduction Section */
+  #Introduction {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
+  #Introduction h1 {
+    font-size: 2.2rem !important;
+    margin: 15px 15px 10px !important;
+    text-align: center;
+  }
+  
+  .desc {
+    font-size: 1rem !important;
+    margin: 0 auto !important;
+    padding: 0 15px 20px !important;
+    text-align: center;
+    max-width: 100%;
+  }
+  
+  /* Profile Photo Animation Area */
+  .Animation {
+    margin: 0 auto;
+    height: auto;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+  }
+  
+  .hoverimage {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .profilephoto {
+    width: 80% !important;
+    max-width: 250px;
+    margin: 0 auto;
+    transition: transform 0.5s ease, filter 0.5s ease, border 0.3s ease;
+  }
+  
+  /* Technology Animation Icons */
+  .animate1, .animate2, .animate3, .animate4, .animate5 {
+    opacity: 0;
+    transition: all 0.4s ease-out;
+    position: absolute;
+    width: 45px !important;
+    height: auto;
+  }
+  
+  .animate1 { 
+    left: 30%;
+    top: 10%;
+  }
+  
+  .animate2 {
+    left: 20%;
+    top: 30%;
+  }
+  
+  .animate3 {
+    left: 15%;
+    top: 50%;
+  }
+  
+  .animate4 {
+    left: 20%;
+    top: 70%;
+  }
+  
+  .animate5 {
+    left: 30%;
+    top: 85%;
+  }
+  
+  .hoverimage:hover ~ .animate1,
+  .hoverimage:hover ~ .animate2,
+  .hoverimage:hover ~ .animate3,
+  .hoverimage:hover ~ .animate4,
+  .hoverimage:hover ~ .animate5 {
+    opacity: 1;
+    transform: translateX(-15px);
+  }
+  
+  /* Skills Section */
+  #Skills {
+    margin-top: 50px !important;
+    padding-top: 20px;
+  }
+  
+  #Skills h1, #Projects h1, #Contact h1 {
+    font-size: 2.2rem !important;
+    margin: 15px 0 !important;
+    text-align: center;
+  }
+  
+  .languages h1, h1 {
+    font-size: 1.8rem !important;
+    margin: 30px 0 15px;
+    text-align: center;
+  }
+  
+  /* Card Styling */
+  .card {
+    width: 100% !important;
+    margin: 12px 0 !important;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  }
+  
+  .card-title {
+    color: #0d6efd;
+    font-weight: 600;
+  }
+  
+  /* Language Cards Layout */
+  .languages .row {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .languages .card {
+    margin: 8px 0 !important;
+  }
+  
+  /* Tools & Technologies */
+  .col .row {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .col .row .card {
+    width: 100% !important;
+    margin: 8px 0 !important;
+  }
+  
+  /* Projects Section */
+  #Projects {
+    margin-top: 50px !important;
+    padding-top: 20px;
+  }
+  
+  .Projects {
+    margin-bottom: 70px !important;
+  }
+  
+  .card.mb-3 {
+    max-width: 100% !important;
+  }
+  
+  .card-body a {
+    font-weight: 600;
+    color: #0d6efd;
+    text-decoration: none;
+  }
+  
+  .card-body a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Contact Section */
+  #Contact {
+    margin-top: 40px !important;
+    padding-top: 20px;
+  }
+  
+  .form-floating {
+    margin-bottom: 15px !important;
+  }
+  
+  .btn-primary {
+    width: 100%;
+    padding: 12px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(13, 110, 253, 0.3);
+  }
+  
+  /* Social Icons */
+  .icons {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 50px;
+    gap: 25px;
+  }
+  
+  .icons .col-md-1 {
+    width: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .icons .col-md-1:hover {
+    transform: translateY(-5px);
+  }
+  
+  .icons img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Small Mobile Devices */
+@media screen and (max-width: 480px) {
+  .navbar-brand {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+    margin: 4px 2px;
+  }
+  
+  #Introduction h1, #Skills h1, #Projects h1, #Contact h1 {
+    font-size: 1.9rem !important;
+  }
+  
+  .languages h1, h1 {
+    font-size: 1.6rem !important;
+  }
+  
+  .animate1, .animate2, .animate3, .animate4, .animate5 {
+    width: 35px !important;
+  }
+  
+  .card-body {
+    padding: 15px;
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+  }
+  
+  .icons {
+    gap: 20px;
+  }
+  
+  .icons img {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+/* Animation enhancement for tap interactions on mobile */
+@media (hover: none) {
+  .profilephoto:active {
+    filter: grayscale(0%);
+    border: #0d6efd 4px solid;
+  }
+  
+  .hoverimage:active ~ .animate1,
+  .hoverimage:active ~ .animate2,
+  .hoverimage:active ~ .animate3,
+  .hoverimage:active ~ .animate4,
+  .hoverimage:active ~ .animate5 {
+    opacity: 1;
+    transform: translateX(-15px);
+  }
+  
+  .card:active {
+    transform: translateY(-3px);
   }
 }

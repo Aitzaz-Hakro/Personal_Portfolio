@@ -1,0 +1,297 @@
+body{
+    scroll-behavior: smooth;
+
+  
+}
+.desc{
+     /* font-family: 'Poppins', sans-serif; */
+     font-family: 'Roboto', sans-serif;
+     align-items: start;
+     
+     font-weight: 500;
+     padding-right: 0px;
+     margin-left: 10px !important;
+     
+     font-size: 1.5rem;
+     /* letter-spacing: 2px; */
+     /* text-shadow: 2px 2px 4px #cec8c8;      */
+    word-spacing: 6px;
+     
+    
+  } 
+.textdiv{
+  background-color: ;
+    width: 60% !important;
+    height: 50% !important;
+    margin-top: 100px !important;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.profilephoto{
+   float: right;
+    border-radius: 10%;
+    filter: grayscale(100%); /*it will make the image black and white*/
+
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    /* background-color: red; */
+    background: linear-gradient(45deg, #ddd 25%, transparent 25%) 0 0 / 10px 10px;
+}
+
+.profilephoto:hover{
+    border: hsl(216, 98%, 55%) 4px solid;
+    filter: grayscale(0%);
+    transform: scale(1.0);
+    transition: all 0.5s;
+
+}
+
+
+.navbtn{
+    font-weight: 600  !important;
+    font-size: large;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+.navbtn:hover{
+     color: rgb(255, 255, 255) !important;
+    background-color: #0d6efd !important;
+    opacity: 1;
+}
+.Animation{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    /* border: 2px solid #333; */
+    display: flex;
+    border-radius: 10%;
+    justify-content: center;
+    align-items: center;
+}
+.hoverimage {
+    top: 0%;
+    position: absolute;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 3;
+  }
+  .animate1,
+  .animate2,
+  .animate3,
+  .animate4,
+  .animate5 {
+   
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    /* background-color: coral; */
+    transition: transform 0.5s, opacity 0.5s;
+  }
+  
+  .animate1,
+  .animate2,
+  .animate3,
+  .animate4,
+  .animate5, .img {
+    /* margin-bottom: 20px; */
+    width: 100%;
+
+    height: 100%;
+  }
+
+  .animate1 {
+    top: 40px;
+    left: 40px;
+  }
+
+  .animate2 {
+    top: 130px;
+    left: 40px;
+  }
+
+  .animate3 {
+    top: 220px;
+    left: 40px;
+  }
+  .animate4 {
+    top: 320px;
+    left: 40px;
+  }
+
+  .animate5 {
+    top: 380px;
+    left: 40px;
+  }
+  .hoverimage:hover ~ .animate1 {
+    transform: translateX(-110px);
+    opacity: 1;
+  }
+  .hoverimage:hover ~ .animate2 {
+     transform: translateX(-110px);
+    opacity: 1;
+  }
+
+  .hoverimage:hover ~ .animate3 {
+    transform: translateX(-110px);
+    opacity: 1;
+  }
+  .hoverimage:hover ~ .animate4 {
+    transform: translateX(-110px);
+    opacity: 1;
+  }
+  .hoverimage:hover ~ .animate5 {
+    transform: translateX(-110px);
+    opacity: 1;
+  }
+.card{
+  margin: 15px !important;
+}
+.Projects{
+  margin-bottom: 200px !important;
+}
+.icons{
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Medium Screen */
+@media screen and (981px<= width <= 1200px) {
+  .desc{
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-right: 0px;
+    
+}
+
+  .profilephoto{
+    margin-top: 100px !important;
+    width: 300px !important;
+    border-radius: 10%;
+    filter: grayscale(100%); /*it will make the image black and white*/
+
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    /* background-color: red; */
+    background: linear-gradient(45deg, #ddd 25%, transparent 25%) 0 0 / 10px 10px;
+}
+.animate1,
+  .animate2,
+  .animate3,
+  .animate4,
+  .animate5 {
+    position: absolute;
+    width: 200px !important;
+    height: 50px;
+    /* background-color: coral; */
+    transition: transform 0.5s, opacity 0.5s;
+  }
+  
+  .animate1,
+  .animate2,
+  .animate3,
+  .animate4,
+  .animate5, .img {
+    /* margin-bottom: 20px; */
+    width: 100%;
+    height: 100%;
+  }
+
+   .animate1 {
+    top: 140px;
+    left: 40px;
+  }
+
+  .animate2 {
+    top: 200px;
+    left: 40px;
+  }
+
+  .animate3 {
+    top: 260px;
+    left: 40px;
+  }
+  .animate4 {
+    top: 320px;
+    left: 40px;
+  }
+
+  .animate5 {
+    top: 370px;
+    left: 40px;
+  }
+}
+
+
+@media screen and (width >= 1400px) {
+  .desc{
+    font-size: 1.7rem;
+    font-weight: 500;
+    padding-right: 0px;
+    
+}
+
+  .profilephoto{
+    margin-top: 100px !important;
+    width: 300px !important;
+    border-radius: 10%;
+    filter: grayscale(100%); /*it will make the image black and white*/
+
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    /* background-color: red; */
+    background: linear-gradient(45deg, #ddd 25%, transparent 25%) 0 0 / 10px 10px;
+}
+.animate1,
+  .animate2,
+  .animate3,
+  .animate4,
+  .animate5 {
+    position: absolute;
+    width: 200px !important;
+    height: 50px;
+    /* background-color: coral; */
+    transition: transform 0.5s, opacity 0.5s;
+  }
+  
+  .animate1,
+  .animate2,
+  .animate3,
+  .animate4,
+  .animate5, .img {
+    /* margin-bottom: 20px; */
+    width: 100%;
+    height: 100%;
+  }
+
+   .animate1 {
+    top: 140px;
+    left: 80px;
+  }
+
+  .animate2 {
+    top: 200px;
+    left: 80px;
+  }
+
+  .animate3 {
+    top: 260px;
+    left: 80px;
+  }
+  .animate4 {
+    top: 320px;
+    left: 80px;
+  }
+
+  .animate5 {
+    top: 370px;
+    left: 80px;
+  }
+
+}
