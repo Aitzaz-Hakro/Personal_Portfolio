@@ -164,15 +164,47 @@ body{
 }
 
 
+@media screen and (width < 317px) {
+    .desc{
+    width: 100%;
+    font-size: 1.rem;
+    font-weight: 500;
+    /* padding-right: 0px; */
+    margin-bottom: 0% !important;
+    }
+    .maintext{
+      font-size: 1rem !important;
+    }
+
+}
+@media screen and (width < 490px) {
+ .textdiv{   
+    width: 100% !important;
+    display: flex !important;
+    text-align: center !important;
+    justify-content: center !important;
+    margin-top: 100% !important;
+  }
+  .navbar{
+    margin-bottom: 0px !important;
+  }
+}
 /* Extra Small Screen */
-@media screen and (width < 768px) {
+@media screen and ( width < 768px) {
    
   .intro{
-    width: 100% !important;
+    /* width: 100% !important; */
     /* background-color: #0d6efd !important; */
     /* align-items: center; */
     justify-content: center !important;
     height: 1100px !important;
+  }
+  .textdiv{   
+    width: 100% !important;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 70px !important;
   }
   .row{
     align-items: start !important;
@@ -198,9 +230,8 @@ body{
   margin-left: 0% !important;
 }
   .profilephoto{
-  
-    /* margin-top: 100px !important; */
-    width: 300px !important;
+    
+    width: 250px !important;
     border-radius: 10%;
     filter: grayscale(100%); /*it will make the image black and white*/
     
@@ -275,7 +306,7 @@ body{
 }
   .profilephoto{
   
-    margin-top: 100px !important;
+    margin-top:  !important;
     width: 300px !important;
     border-radius: 10%;
     filter: grayscale(100%); /*it will make the image black and white*/
@@ -307,26 +338,26 @@ body{
   }
 
    .animate1 {
-    top: 125px;
+    top: 30px;
     left: 40px;
   }
 
   .animate2 {
-    top: 185px;
+    top: 90px;
     left: 40px;
   }
 
   .animate3 {
-    top: 245px;
+    top: 150px;
     left: 40px;
   }
   .animate4 {
-    top: 305px;
+    top: 210px;
     left: 40px;
   }
 
   .animate5 {
-    top: 355px;
+    top: 270px;
     left: 40px;
   }
 }
