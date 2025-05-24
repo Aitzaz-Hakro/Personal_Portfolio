@@ -192,6 +192,7 @@ body{
 /* Extra Small Screen */
 @media screen and ( width < 768px) {
    
+
   .intro{
     /* width: 100% !important; */
     /* background-color: #0d6efd !important; */
@@ -288,6 +289,11 @@ body{
     top: 390px;
     left: 40px;
   }
+  
+.icons{
+  display: flex;
+  justify-content: space-around;
+}
 }
 
 /*  Small Screen */
@@ -304,9 +310,14 @@ body{
 .maintext{
   font-size: 3rem !important;
 }
-  .profilephoto{
-  
-    margin-top:  !important;
+.headings{
+  font-size: 2.5rem !important;
+  font-weight: 600 !important;
+  /* margin-top: 20px !important; */
+}
+.profilephoto{
+/*   
+    margin-top:  !important; */
     width: 300px !important;
     border-radius: 10%;
     filter: grayscale(100%); /*it will make the image black and white*/
