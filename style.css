@@ -1,30 +1,38 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 body{
     scroll-behavior: smooth;
 
   
 }
 .desc{
-    font-size: 1.2rem;
-    font-weight: 500;
-    padding-right: 0px;
+     /* font-family: 'Poppins', sans-serif; */
+     font-family: 'Roboto', sans-serif;
+     align-items: start;
+     
+     font-weight: 500;
+     padding-right: 0px;
+     margin-left: 10px !important;
+     
+     font-size: 1.5rem;
+     /* letter-spacing: 2px; */
+     /* text-shadow: 2px 2px 4px #cec8c8;      */
+    word-spacing: 6px;
+     
     
+  } 
+.textdiv{
+  
+    width: 60% !important;
+    height: 50% !important;
+    margin-top: 100px !important;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
 }
 .profilephoto{
-  
+   float: right;
     border-radius: 10%;
     filter: grayscale(100%); /*it will make the image black and white*/
 
@@ -34,10 +42,11 @@ body{
 }
 
 .profilephoto:hover{
-    border: hsl(216, 98%, 55%) 4px solid;
+    border: hsl(216, 98%, 55%) 4px solid !important;
     filter: grayscale(0%);
     transform: scale(1.0);
-    transition: all 0.5s;
+    transition: all 0.2s ease;
+
 }
 
 
@@ -100,26 +109,26 @@ body{
   }
 
   .animate1 {
-    top: 40px;
+    top: 60px;
     left: 40px;
   }
 
   .animate2 {
-    top: 130px;
+    top: 150px;
     left: 40px;
   }
 
   .animate3 {
-    top: 220px;
+    top: 240px;
     left: 40px;
   }
   .animate4 {
-    top: 320px;
+    top: 340px;
     left: 40px;
   }
 
   .animate5 {
-    top: 380px;
+    top: 400px;
     left: 40px;
   }
   .hoverimage:hover ~ .animate1 {
@@ -149,633 +158,358 @@ body{
 .Projects{
   margin-bottom: 200px !important;
 }
-
-
-
-
-@media only screen and (min-width: 2000px){
-  .desc{
-    font-size: 1rem;
-  }
-  .animate1,
-  .animate2,
-  .animate3,
-  .animate4,
-  .animate5, .img {
-    
-    width: 200px !important;
-
-    opacity: 0;
-    
-  }
-  
-  .profilephoto{
-    width: 70% !important;
-    border-radius: 10%;
-    filter: grayscale(100%); /*it will make the image black and white*/
-  
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
-    /* background-color: red; */
-    background: linear-gradient(45deg, #ddd 25%, transparent 25%) 0 0 / 10px 10px;
-  }
-}
 .icons{
   display: flex;
-  justify-content: space-around
-}
-
-@media screen and (max-width: 600px){
-  .desc{
-    font-size: 1rem;
-  }
-  .profilephoto{
-    width: 70% !important;
-    border-radius: 10%;
-    filter: grayscale(100%); /*it will make the image black and white*/
-  
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
-    /* background-color: red; */
-    background: linear-gradient(45deg, #ddd 25%, transparent 25%) 0 0 / 10px 10px;
-  }
-  .animate1,
-  .animate2,
-  .animate3,
-  .animate4,
-  .animate5, .img {
-    
-    width: 100px !important;
-
-    opacity: 0;
-    
-  }
-  
+  justify-content: space-around;
 }
 
 
-@media only screen and (max-width: 12000px){
-  .desc{
-    font-size: 1rem;
-  }
-  .animate1,
-  .animate2,
-  .animate3,
-  .animate4,
-  .animate5, .img {
-    
-    width: 100px !important;
+@media screen and (width < 317px) {
+    .desc{
+    width: 100%;
+    font-size: 1.rem;
+    font-weight: 500;
+    /* padding-right: 0px; */
+    margin-bottom: 0% !important;
+    }
+    .maintext{
+      font-size: 1rem !important;
+    }
 
-    opacity: 0;
-    
-  }
-  
-  .profilephoto{
-    width: 70% !important;
-    border-radius: 10%;
-    filter: grayscale(100%); /*it will make the image black and white*/
-  
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
-    /* background-color: red; */
-    background: linear-gradient(45deg, #ddd 25%, transparent 25%) 0 0 / 10px 10px;
-  }
 }
-.icons{
-  display: flex;
-  justify-content: space-around
-}
-
-@media screen and (max-width: 600px){
-  .desc{
-    font-size: 1rem;
-  }
-  .profilephoto{
-    width: 70% !important;
-    border-radius: 10%;
-    filter: grayscale(100%); /*it will make the image black and white*/
+@media screen and (width < 490px) {
   
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
-    /* background-color: red; */
-    background: linear-gradient(45deg, #ddd 25%, transparent 25%) 0 0 / 10px 10px;
-  }
-  .animate1,
-  .animate2,
-  .animate3,
-  .animate4,
-  .animate5, .img {
-    
-    width: 150px !important;
-
-    opacity: 0;
-    
-  }
- 
-  .animate1 {
-    top: 20px;
-    left: 40px;
-  }
-
-  .animate2 {
-    top: 60px;
-    left: 40px;
-  }
-
-  .animate3 {
-    top: 180px;
-    left: 40px;
-  }
-  .animate4 {
-    top: 290px;
-    left: 40px;
-  }
-
-  .animate5 {
-    top: 350px;
-    left: 40px;
-  }
-}
-
-/* Mobile Responsive Media Query */
-
-/* Mobile Responsive Styles - Add this to your style.css file */
-
-/* Base mobile styles */
-/* @media screen and (max-width: 768px) {
-  /* Navigation */
-  .navbar-brand {
-    font-size: 1rem;
-    padding: 8px 12px;
-    margin: 4px 2px;
-  }
-  
-  /* Introduction section */
-  #Introduction h1 {
-    font-size: 2.5rem !important;
-    margin-left: 15px !important;
-    margin-top: 20px !important;
-  }
-  
-  .desc {
-    font-size: 1rem !important;
-    margin-left: 15px !important;
-    padding-right: 15px !important;
-  }
-  
-  /* Center profile photo and animations */
-  .Animation {
-    margin: 0 auto;
-    height: 350px;
-  }
-  
-  .profilephoto {
-    width: 70% !important;
-    display: block;
-    margin: 0 auto;
-  }
-  
-  /* Skills section */
-  #Skills h1 {
-    font-size: 2.5rem !important;
-    margin-left: 15px !important;
-  }
-  
-  .languages h1, h1 {
-    font-size: 1.8rem !important;
-    margin-left: 10px;
-  }
-  
-  .card {
+ .textdiv{   
     width: 100% !important;
-    margin: 10px 5px !important;
+    display: flex !important;
+    text-align: center !important;
+    justify-content: center !important;
+    margin-top: 100% !important;
+  }
+  .navbar{
+    margin-bottom: 0px !important;
+  }
+}
+/* Extra Small Screen */
+@media screen and ( width < 768px) {
+   
+
+  .intro{
+    /* width: 100% !important; */
+    /* background-color: #0d6efd !important; */
+    /* align-items: center; */
+    justify-content: center !important;
+    height: 1100px !important;
+  }
+  .textdiv{   
+    width: 100% !important;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 70px !important;
+  }
+  .row{
+    align-items: start !important;
+    flex-direction: column-reverse !important;
+  }
+  .desc{
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 500;
+    /* padding-right: 0px; */
+    margin-bottom: 0% !important;
+    
+}
+   .container {
+        max-width: 600px !important;
+    }
+.maintext{
+  width: 100%;
+  /* background-color: #4CAF50; */
+  font-size: 3rem !important;
+}
+.maintext h1{
+  margin-left: 0% !important;
+}
+  .profilephoto{
+    
+    width: 250px !important;
+    border-radius: 10%;
+    filter: grayscale(100%); /*it will make the image black and white*/
+    
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    /* background-color: red; */
+    background: linear-gradient(45deg, #ddd 25%, transparent 25%) 0 0 / 10px 10px;
+}
+.animate1,
+  .animate2,
+  .animate3,
+  .animate4,
+  .animate5 {
+    visibility: hidden;
+    position: absolute;
+    width: 150px !important;
+    height: 50px;
+    /* background-color: coral; */
+    transition: transform 0.5s, opacity 0.5s;
   }
   
-  /* Projects section */
-  #Projects h1 {
-    font-size: 2.5rem !important;
-    margin-left: 15px !important;
+  #Skills{
+    margin-top: 150px !important;
   }
-  
-  .card.mb-3 {
-    max-width: 100% !important;
+  .animate1,
+  .animate2,
+  .animate3,
+  .animate4,
+  .animate5, .img {
+    /* margin-bottom: 20px; */
+    width: 100%;
+    height: 100%;
   }
-  
-  /* Contact section */
-  #Contact h1 {
-    font-size: 2.5rem !important;
-    margin-left: 15px !important;
-  }
-  
-  /* Fix animation positions for mobile */
-  .animate1 {
-    top: 20px;
+
+   .animate1 {
+    top: 160px;
     left: 40px;
   }
 
   .animate2 {
-    top: 70px;
-    left: 40px;
-  }
-
-  .animate3 {
-    top: 120px;
-    left: 40px;
-  }
-  
-  .animate4 {
-    top: 170px;
-    left: 40px;
-  }
-
-  .animate5 {
     top: 220px;
     left: 40px;
   }
-  
-  /* Social icons */
-  .icons {
-    display: flex;
-    justify-content: space-around;
-    padding: 0 10px;
-  }
-  
-  .icons .col-md-1 {
-    width: 25%;
-    text-align: center;
-  }
-  
-  .icons img {
-    max-width: 70%;
-  }
-} */
-
-/* Small mobile devices */
-@media screen and (max-width: 480px) {
-  /* Navigation */
-  .navbar-brand {
-    font-size: 0.8rem;
-    padding: 6px 8px;
-  }
-  
-  /* Headings */
-  #Introduction h1, #Skills h1, #Projects h1, #Contact h1 {
-    font-size: 2rem !important;
-  }
-  
-  /* Profile section */
-  .Animation {
-    height: 300px;
-  }
-  
-  /* Animation positions for very small screens */
-  .animate1 {
-    top: 20px;
-    left: 30px;
-  }
-
-  .animate2 {
-    top: 60px;
-    left: 30px;
-  }
 
   .animate3 {
-    top: 100px;
-    left: 30px;
+    top: 280px;
+    left: 40px;
   }
-  
   .animate4 {
-    top: 140px;
-    left: 30px;
+    top: 340px;
+    left: 40px;
   }
 
   .animate5 {
-    top: 180px;
-    left: 30px;
+    top: 390px;
+    left: 40px;
   }
   
-  /* Make cards full width and reduce margins */
-  .card {
-    margin: 8px 0 !important;
-  }
+.icons{
+  display: flex;
+  justify-content: space-around;
+}
 }
 
+/*  Small Screen */
+@media screen and (width < 991px) {
+  
+ .desc{
+    
+   
+   font-size: 1.2rem;
+    font-weight: 500;
+    padding-right: 0px;
+    
+}
+.textdiv{
+  margin-top: 20px !important;
+    
+}
+.maintext{
+  font-size: 2.4rem !important;
+}
+.headings{
+  font-size: 2.5rem !important;
+  font-weight: 600 !important;
+  /* margin-top: 20px !important; */
+}
+.profilephoto{
+/*   
+    margin-top:  !important; */
+    width: 300px !important;
+    border-radius: 10%;
+    filter: grayscale(100%); /*it will make the image black and white*/
 
-/* Enhanced Mobile Template for Portfolio Website */
-
-/* Global Mobile Adjustments */
-@media screen and (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-    font-size: 16px;
-  }
-  
-  .container {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  
-  /* Modern Mobile Navigation */
-  .navbar {
-    padding: 10px 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-    background-color: rgba(255, 255, 255, 0.95) !important;
-  }
-  
-  .container-md {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none; /* Firefox */
-    padding: 0 5px;
-  }
-  
-  .container-md::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera */
-  }
-  
-  .navbar-brand {
-    font-size: 0.9rem;
-    padding: 8px 12px;
-    margin: 4px 4px;
-    white-space: nowrap;
-    flex-shrink: 0;
-    border-radius: 20px;
-    transition: all 0.3s ease;
-  }
-  
-  /* Introduction Section */
-  #Introduction {
-    margin-top: 25px;
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  
-  #Introduction h1 {
-    font-size: 2.2rem !important;
-    margin: 15px 15px 10px !important;
-    text-align: center;
-  }
-  
-  .desc {
-    font-size: 1rem !important;
-    margin: 0 auto !important;
-    padding: 0 15px 20px !important;
-    text-align: center;
-    max-width: 100%;
-  }
-  
-  /* Profile Photo Animation Area */
-  .Animation {
-    margin: 0 auto;
-    height: auto;
-    padding-bottom: 40px;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    position: relative;
-  }
-  
-  .hoverimage {
-    width: 70%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .profilephoto {
-    width: 80% !important;
-    max-width: 250px;
-    margin: 0 auto;
-    transition: transform 0.5s ease, filter 0.5s ease, border 0.3s ease;
-  }
-  
-  /* Technology Animation Icons */
-  .animate1, .animate2, .animate3, .animate4, .animate5 {
-    opacity: 0;
-    transition: all 0.4s ease-out;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    /* background-color: red; */
+    background: linear-gradient(45deg, #ddd 25%, transparent 25%) 0 0 / 10px 10px;
+}
+.animate1,
+  .animate2,
+  .animate3,
+  .animate4,
+  .animate5 {
     position: absolute;
-    width: 45px !important;
-    height: auto;
+    width: 150px !important;
+    height: 50px;
+    /* background-color: coral; */
+    transition: transform 0.5s, opacity 0.5s;
   }
   
-  .animate1 { 
-    left: 30%;
-    top: 10%;
-  }
-  
-  .animate2 {
-    left: 20%;
-    top: 30%;
-  }
-  
-  .animate3 {
-    left: 15%;
-    top: 50%;
-  }
-  
-  .animate4 {
-    left: 20%;
-    top: 70%;
-  }
-  
-  .animate5 {
-    left: 30%;
-    top: 85%;
-  }
-  
-  .hoverimage:hover ~ .animate1,
-  .hoverimage:hover ~ .animate2,
-  .hoverimage:hover ~ .animate3,
-  .hoverimage:hover ~ .animate4,
-  .hoverimage:hover ~ .animate5 {
-    opacity: 1;
-    transform: translateX(-15px);
-  }
-  
-  /* Skills Section */
-  #Skills {
-    margin-top: 50px !important;
-    padding-top: 20px;
-  }
-  
-  #Skills h1, #Projects h1, #Contact h1 {
-    font-size: 2.2rem !important;
-    margin: 15px 0 !important;
-    text-align: center;
-  }
-  
-  .languages h1, h1 {
-    font-size: 1.8rem !important;
-    margin: 30px 0 15px;
-    text-align: center;
-  }
-  
-  /* Card Styling */
-  .card {
-    width: 100% !important;
-    margin: 12px 0 !important;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-  }
-  
-  .card-title {
-    color: #0d6efd;
-    font-weight: 600;
-  }
-  
-  /* Language Cards Layout */
-  .languages .row {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .languages .card {
-    margin: 8px 0 !important;
-  }
-  
-  /* Tools & Technologies */
-  .col .row {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .col .row .card {
-    width: 100% !important;
-    margin: 8px 0 !important;
-  }
-  
-  /* Projects Section */
-  #Projects {
-    margin-top: 50px !important;
-    padding-top: 20px;
-  }
-  
-  .Projects {
-    margin-bottom: 70px !important;
-  }
-  
-  .card.mb-3 {
-    max-width: 100% !important;
-  }
-  
-  .card-body a {
-    font-weight: 600;
-    color: #0d6efd;
-    text-decoration: none;
-  }
-  
-  .card-body a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Contact Section */
-  #Contact {
-    margin-top: 40px !important;
-    padding-top: 20px;
-  }
-  
-  .form-floating {
-    margin-bottom: 15px !important;
-  }
-  
-  .btn-primary {
+  .animate1,
+  .animate2,
+  .animate3,
+  .animate4,
+  .animate5, .img {
+    /* margin-bottom: 20px; */
     width: 100%;
-    padding: 12px;
-    border-radius: 30px;
-    font-weight: 600;
-    transition: all 0.3s ease;
+    height: 100%;
   }
-  
-  .btn-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(13, 110, 253, 0.3);
+
+   .animate1 {
+    top: 30px;
+    left: 40px;
   }
-  
-  /* Social Icons */
-  .icons {
-    display: flex;
-    justify-content: center;
-    padding: 20px 0 50px;
-    gap: 25px;
+
+  .animate2 {
+    top: 90px;
+    left: 40px;
   }
-  
-  .icons .col-md-1 {
-    width: auto;
-    transition: transform 0.3s ease;
+
+  .animate3 {
+    top: 150px;
+    left: 40px;
   }
-  
-  .icons .col-md-1:hover {
-    transform: translateY(-5px);
+  .animate4 {
+    top: 210px;
+    left: 40px;
   }
-  
-  .icons img {
-    width: 40px;
-    height: 40px;
+
+  .animate5 {
+    top: 270px;
+    left: 40px;
   }
 }
 
-/* Small Mobile Devices */
-@media screen and (max-width: 480px) {
-  .navbar-brand {
-    font-size: 0.8rem;
-    padding: 6px 10px;
-    margin: 4px 2px;
-  }
-  
-  #Introduction h1, #Skills h1, #Projects h1, #Contact h1 {
-    font-size: 1.9rem !important;
-  }
-  
-  .languages h1, h1 {
-    font-size: 1.6rem !important;
-  }
-  
-  .animate1, .animate2, .animate3, .animate4, .animate5 {
-    width: 35px !important;
-  }
-  
-  .card-body {
-    padding: 15px;
-  }
-  
-  .card-title {
+/* Medium Screen */
+@media screen and (991px<= width <= 1200px) {
+  .desc{
     font-size: 1.2rem;
+    font-weight: 500;
+    padding-right: 0px;
+    
+}
+.maintext{
+  font-size: 3rem !important;
+}
+
+  .profilephoto{
+    margin-top: 100px !important;
+    width: 300px !important;
+    border-radius: 10%;
+    filter: grayscale(100%); /*it will make the image black and white*/
+
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    /* background-color: red; */
+    background: linear-gradient(45deg, #ddd 25%, transparent 25%) 0 0 / 10px 10px;
+}
+.animate1,
+  .animate2,
+  .animate3,
+  .animate4,
+  .animate5 {
+    position: absolute;
+    width: 200px !important;
+    height: 50px;
+    /* background-color: coral; */
+    transition: transform 0.5s, opacity 0.5s;
   }
   
-  .icons {
-    gap: 20px;
+  .animate1,
+  .animate2,
+  .animate3,
+  .animate4,
+  .animate5, .img {
+    /* margin-bottom: 20px; */
+    width: 100%;
+    height: 100%;
   }
-  
-  .icons img {
-    width: 35px;
-    height: 35px;
+
+   .animate1 {
+    top: 140px;
+    left: 40px;
+  }
+
+  .animate2 {
+    top: 200px;
+    left: 40px;
+  }
+
+  .animate3 {
+    top: 260px;
+    left: 40px;
+  }
+  .animate4 {
+    top: 320px;
+    left: 40px;
+  }
+
+  .animate5 {
+    top: 370px;
+    left: 40px;
   }
 }
 
-/* Animation enhancement for tap interactions on mobile */
-@media (hover: none) {
-  .profilephoto:active {
-    filter: grayscale(0%);
-    border: #0d6efd 4px solid;
+
+@media screen and (width >= 1400px) {
+  .desc{
+    font-size: 1.7rem;
+    font-weight: 500;
+    padding-right: 0px;
+    
+}
+
+  .profilephoto{
+    margin-top: 100px !important;
+    width: 300px !important;
+    border-radius: 10%;
+    filter: grayscale(100%); /*it will make the image black and white*/
+
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    /* background-color: red; */
+    background: linear-gradient(45deg, #ddd 25%, transparent 25%) 0 0 / 10px 10px;
+}
+.animate1,
+  .animate2,
+  .animate3,
+  .animate4,
+  .animate5 {
+    position: absolute;
+    width: 200px !important;
+    height: 50px;
+    /* background-color: coral; */
+    transition: transform 0.5s, opacity 0.5s;
   }
   
-  .hoverimage:active ~ .animate1,
-  .hoverimage:active ~ .animate2,
-  .hoverimage:active ~ .animate3,
-  .hoverimage:active ~ .animate4,
-  .hoverimage:active ~ .animate5 {
-    opacity: 1;
-    transform: translateX(-15px);
+  .animate1,
+  .animate2,
+  .animate3,
+  .animate4,
+  .animate5, .img {
+    /* margin-bottom: 20px; */
+    width: 100%;
+    height: 100%;
   }
-  
-  .card:active {
-    transform: translateY(-3px);
+
+   .animate1 {
+    top: 140px;
+    left: 80px;
   }
+
+  .animate2 {
+    top: 200px;
+    left: 80px;
+  }
+
+  .animate3 {
+    top: 260px;
+    left: 80px;
+  }
+  .animate4 {
+    top: 320px;
+    left: 80px;
+  }
+
+  .animate5 {
+    top: 370px;
+    left: 80px;
+  }
+
 }
