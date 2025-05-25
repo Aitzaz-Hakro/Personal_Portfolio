@@ -42,10 +42,10 @@ body{
 }
 
 .profilephoto:hover{
-    border: hsl(216, 98%, 55%) 4px solid;
+    border: hsl(216, 98%, 55%) 4px solid !important;
     filter: grayscale(0%);
     transform: scale(1.0);
-    transition: all 0.5s;
+    transition: all 0.2s ease;
 
 }
 
@@ -178,6 +178,7 @@ body{
 
 }
 @media screen and (width < 490px) {
+  
  .textdiv{   
     width: 100% !important;
     display: flex !important;
@@ -307,8 +308,12 @@ body{
     padding-right: 0px;
     
 }
+.textdiv{
+  margin-top: 20px !important;
+    
+}
 .maintext{
-  font-size: 3rem !important;
+  font-size: 2.4rem !important;
 }
 .headings{
   font-size: 2.5rem !important;
