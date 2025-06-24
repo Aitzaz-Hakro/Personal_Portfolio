@@ -1,7 +1,21 @@
-body{
-    scroll-behavior: smooth;
-
-  
+:root {
+  --primary-color: #4f8cff;
+  --secondary-color: #c69cf4;
+  --background-color: #f8f9fa;
+  --text-color: #222;
+}
+body {
+  font-family: 'Montserrat', Arial, sans-serif;
+  background: var(--background-color);
+  color: var(--text-color);
+  scroll-behavior: smooth;
+}
+.text-primary {
+  color: var(--primary-color) !important;
+}
+.btn-primary {
+  background: var(--primary-color);
+  border: none;
 }
 .desc{
      /* font-family: 'Poppins', sans-serif; */
