@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aitzaz Hassan | Portfolio</title>
+    <link rel="icon" type="image/svg" href="media/user-circle.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="style copy.css">
+</head>
+<body>
+  <!-- Dark Theme Toggle Button -->
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+    <span id="themeIcon">🌙</span> <span id="themeText">Dark Mode</span>
+  </button>
+
+  <!-- Hero Section -->
+  <header class="hero-section d-flex align-items-center justify-content-center flex-column text-center">
+    <img src="media/profilephoto.png" alt="Aitzaz Hassan" class="profile-img mb-3">
+    <h1 class="display-4 fw-bold">Aitzaz Hassan</h1>
+    <p class="lead"> <span class="typing" id="typingJob">Front End Developer | Open to Opportunities</span></p>
+    <a href="#Contact" class="btn btn-primary mt-3">Contact Me</a>
+    <div class="scroll-down" aria-label="Scroll down">⌄</div>
+  </header>
+
+  <!-- About Me Section -->
+  <section class="about-section container section-fade" id="About">
+    <h2 class="text-primary">About Me</h2>
+    <p class="about-text">A passionate web developer with 6 months of experience building clean, responsive, and user-friendly websites. I love turning ideas into functional, visually appealing web experiences. Always learning, always coding — and currently open to exciting new opportunities!</p>
+    <a href="media/Aitzaz Hassan Resume.pdf" class="btn btn-outline-primary mt-2" download>Download Resume</a>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills-section container section-fade" id="Skills">
+    <h2 class="text-primary">Skills</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <h4>Languages</h4>
+        <ul class="list-unstyled">
+          <li><strong>JavaScript</strong> – Dynamic web apps, DOM, APIs</li>
+          <li><strong>Python</strong> – Scripting, data analysis, Flask</li>
+          <li><strong>Java</strong> – OOP, JDBC, Swing</li>
+          <li><strong>C++</strong> – Efficient code, STL, OOP</li>
+          <li><strong>CSS</strong> – Responsive design, Flexbox, Grid</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h4>Tools & Technologies</h4>
+        <ul class="list-unstyled">
+          <li>HTML, CSS, JavaScript, Bootstrap</li>
+          <li>Git & GitHub</li>
+          <li>XAMPP (PHP, MySQL)</li>
+          <li>CapCut, Canva, MS Office</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-md-4">
+        <div class="skill-bar">
+          <span>JavaScript <strong>40%</strong></span>
+          <div class="bar"><div class="bar-fill" style="width: 40%"></div></div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="skill-bar">
+          <span>CSS <strong>30%</strong></span>
+          <div class="bar"><div class="bar-fill" style="width: 30%"></div></div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="skill-bar">
+          <span>HTML <strong>30%</strong></span>
+          <div class="bar"><div class="bar-fill" style="width: 30%"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects-section container bg-light section-fade" id="Projects">
+    <h2 class="text-primary">Projects</h2>
+   
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="media/hpwebsite.jpeg" class="card-img-top" alt="HultPrize website">
+          <div class="card-body">
+            <h5 class="card-title">HultPrize Website</h5>
+            <p class="card-text">Official website for HultPrize at MUET SZAB. Built with HTML, CSS, and Bootstrap. Features event info and registration.</p>
+            <a href="https://hpmuetszab.social" class="btn btn-primary btn-sm" target="_blank">Live Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="media/quotegenerate.png" class="card-img-top" alt="Random Quote Generator">
+          <div class="card-body">
+            <h5 class="card-title">Random Quote Generator</h5>
+            <p class="card-text">A web app that displays random quotes. Built with JavaScript and Bootstrap. Clean UI and responsive design.</p>
+            <a href="#" class="btn btn-primary btn-sm" target="_blank">Live Demo</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="media/Screenshot_12-6-2025_12496_aitzaz-hakro.github.io.jpeg" class="card-img-top" alt="Restaurant Website">
+          <div class="card-body">
+            <h5 class="card-title">Restaurant Website</h5>
+            <p class="card-text about-text">A modern restaurant website with menu, gallery, and contact form. Built with HTML, CSS, and Bootstrap.</p>
+            <a href="https://aitzaz-hakro.github.io/Restaurant-website/" class="btn btn-primary btn-sm" target="_blank">Live Demo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call-to-Action Banner -->
+  <div class="cta-banner section-fade">
+    🚀 Ready to work together or have a project in mind?
+    <br>
+    <a href="#Contact" class="btn btn-primary">Let's Connect!</a>
+  </div>
+
+  <!-- Contact Section -->
+  <section class="contact-section container section-fade" id="Contact">
+    <h2 class="text-primary">Contact Me</h2>
+    <form id="contactForm" class="mb-3">
+      <div class="mb-3">
+        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+      </div>
+      <div class="mb-3">
+        <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" required>
+      </div>
+      <div class="mb-3">
+        <textarea class="form-control" id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+    <div class="social-links mt-4">
+      <a href="https://www.linkedin.com/in/aitzaz-hakro-1b1091a6/" target="_blank" class="me-3"><img src="media/linkedin.svg" alt="LinkedIn" width="32"></a>
+      <a href="https://github.com/Aitzaz-Hakro" target="_blank" class="me-3"><img src="media/github.svg" alt="GitHub" width="32"></a>
+      <a href="mailto:aitzazhakro123@gmail.com" class="me-3"><img src="media/email.svg" alt="Email" width="32"></a>
+      <a href="#" class="me-3"><img src="media/facebook.svg" alt="Facebook" width="32"></a>
+      <a href="#" class="me-3"><img src="media/instagram.svg" alt="Instagram" width="32"></a>
+    </div>
+  </section>
+
+  <script src="Bootstrap/bootstrap.bundle.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+    // Dark mode toggle
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = document.getElementById('themeIcon');
+    const themeText = document.getElementById('themeText');
+    function setTheme(isDark) {
+      document.body.classList.toggle('dark', isDark);
+      themeIcon.textContent = isDark ? '☀️' : '🌙';
+      themeText.textContent = isDark ? 'Light Mode' : 'Dark Mode';
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    }
+    themeToggle.addEventListener('click', () => {
+      setTheme(!document.body.classList.contains('dark'));
+    });
+    if (localStorage.getItem('theme') === 'dark') setTheme(true);
+
+    // Section fade-in on scroll
+    function revealSections() {
+      document.querySelectorAll('.section-fade').forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 80) {
+          section.classList.add('visible');
+        }
+      });
+    }
+    window.addEventListener('scroll', revealSections);
+    window.addEventListener('DOMContentLoaded', revealSections);
+
+    // Animate skill bars on scroll
+    function animateSkillBars() {
+      document.querySelectorAll('.skills-section .bar-fill').forEach(bar => {
+        const parent = bar.closest('.skills-section');
+        const rect = parent.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 80) {
+          if (!bar.classList.contains('animated')) {
+            bar.classList.add('animated');
+            // Get the target width from the parent .bar's first child style
+            const targetWidth = bar.parentElement.getAttribute('style')
+              ? bar.parentElement.getAttribute('style').match(/width:\s*([0-9]+%)/)
+              : null;
+            if (targetWidth && targetWidth[1]) {
+              bar.style.width = targetWidth[1];
+            }
+          }
+        }
+      });
+    }
+    window.addEventListener('scroll', animateSkillBars);
+    window.addEventListener('DOMContentLoaded', animateSkillBars);
+
+    // Typing animation for job title (if you want to use JS instead of CSS)
+    // Uncomment below if you want to use JS typing effect instead of CSS
+    /*
+    const jobTitles = ["Web Developer", "Open to Opportunities", "UI/UX Enthusiast"];
+    let typingIndex = 0, charIndex = 0, typingElement = document.getElementById('typingJob');
+    function typeJobTitle() {
+      if (!typingElement) return;
+      typingElement.textContent = jobTitles[typingIndex].slice(0, charIndex++);
+      if (charIndex > jobTitles[typingIndex].length) {
+        setTimeout(() => {
+          charIndex = 0;
+          typingIndex = (typingIndex + 1) % jobTitles.length;
+          setTimeout(typeJobTitle, 800);
+        }, 1200);
+      } else {
+        setTimeout(typeJobTitle, 80);
+      }
+    }
+    // typeJobTitle();
+    */
+
+    // EmailJS contact form
+    emailjs.init("fZE4Y7QO0QLRW-d5t");
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+      const templateParams = { name, email, message };
+      emailjs.send('service_uovvmzk', 'template_wbua1cr', templateParams)
+        .then(response => {
+          alert('Email sent successfully!');
+          document.getElementById('contactForm').reset();
+        })
+        .catch(error => {
+          console.error('Error sending email:', error);
+          alert('Failed to send email. Please try again.');
+        });
+    });
+  </script>
+</body>
+</html>
